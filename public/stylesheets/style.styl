@@ -1,0 +1,99 @@
+
+size(w=100%,h=w)
+  width w
+  height h
+
+flexCenter(j=center,a=j,d=row)
+  flex-direction d
+  display flex
+  justify-content j
+  align-items a
+    
+*
+  font-family 'Fjalla One', sans-serif
+  margin 0
+  padding 0
+
+html,body
+  size(100%,100%)
+  flexCenter()
+  overflow hidden
+  
+.wrapper
+  size(100%,100%)
+  display grid
+  grid-template-columns 4fr 6fr 2fr
+  grid-template-rows auto
+  
+.left
+  display grid
+  color #fff
+  background-color #403070
+  grid-template-columns auto
+  grid-template-rows 1fr 6fr 3fr
+  padding 32px
+  .option
+    display grid
+    grid-template-columns 1fr 1fr 1fr 1fr
+    grid-template-rows 48px
+    .brand
+      size(48px)
+  .info
+    display grid
+    padding 32px
+    grid-template-columns 2fr 10fr
+    grid-template-rows auto
+    .photo
+      size(64px)
+      border-radius 50%
+      margin-right 16px
+      background url("https://assets-lighthouse.s3.amazonaws.com/uploads/user/photo/1827/medium__.png")
+      background-position center
+      background-size contain
+    .text
+      padding 8px
+      .icon
+        margin-top 16px
+        size(100px,36px)
+        display flex
+        a
+          color #fff
+          text-decoration none
+          size()
+          margin-right 16px
+      p
+        size()
+  .bottom
+    size(100%)
+    display flex
+    justify-content center
+    .ball
+      size(200px)
+      border 1px solid #000
+      border-radius 50%
+
+  
+.medium
+  background-color #FFFEF2
+  padding 32px
+  .option
+    h3
+      color #FB614A
+    h1
+      color #FB614A
+      font-size 60px
+      font-weight bold
+      text-transform uppercase
+      
+.right
+  padding 32px
+  background-color #FB614A
+  color #FFFEF2
+  .option
+    h3
+      text-transform uppercase 
+  ul
+    margin-top 16px
+    li
+      margin-top 8px
+      list-style none
